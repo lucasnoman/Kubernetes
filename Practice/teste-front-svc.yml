@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: teste-front-svc
+spec:
+  type: NodePort
+  ports:
+    - port: 5173
+      nodePort: 30010
+  selector:
+    app: teste-front-pod

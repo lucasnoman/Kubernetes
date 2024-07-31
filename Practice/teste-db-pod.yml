@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: teste-db-pod
+  labels:
+    app: teste-db-pod
+spec:
+  containers:
+    - name: teste-db-container
+      image: bitnami/postgresql
+      ports:
+        - containerPort: 5432
+      envFrom:
+        - configMapRef:
+            name: teste-db-configmap

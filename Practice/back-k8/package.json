@@ -1,0 +1,22 @@
+{
+  "name": "back-k8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "server": "tsx watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "20.14.9",
+    "@types/pg": "8.11.6",
+    "tsx": "4.16.0",
+    "typescript": "5.5.3"
+  },
+  "dependencies": {
+    "pg": "8.12.0"
+  }
+}

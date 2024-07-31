@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: teste-back-svc
+spec:
+  type: NodePort
+  ports:
+    - port: 3000
+      # targetPort: 3000
+      nodePort: 30011
+  selector:
+    app: teste-back-pod

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: teste-back-pod
+  labels:
+    app: teste-back-pod
+spec:
+  containers:
+    - name: teste-back-container
+      image: lucasnoman/back-teste:v1
+      ports:
+        - containerPort: 3000
+      envFrom:
+        - configMapRef:
+            name: teste-back-configmap
